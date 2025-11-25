@@ -2,7 +2,7 @@
 
 **Final Submission for the Google Cloud Build and Blog Marathon**
 
-**Live Demo URL:** [INSERT YOUR CLOUD RUN URL HERE]
+**Live Demo URL:** https://wednesday-final-v2-61655539898.us-central1.run.app/
 **Repo Link:** https://github.com/SamarthSehgal/wednesday-Investigator
 
 ---
@@ -59,13 +59,4 @@ The solution uses a **Serverless Microservices Architecture** with a **Direct RE
 2.  Install dependencies: `pip install -r requirements.txt`
 3.  Run Streamlit: `streamlit run app.py`
 
-*(End of File)*
 
-### 📝 Final Action
-1.  Create the `README.md` file in your `wednesday-deploy` folder.
-2.  Run the following Git commands in your terminal to stage the new file and push the final documentation:
-
-```bash
-git add README.md
-git commit -m "feat: Add final README.md for submission"
-git push origin main
