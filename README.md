@@ -3,13 +3,14 @@
 **Final Submission for the Google Cloud Build and Blog Marathon**
 
 **Live Demo URL:** https://wednesday-final-v2-61655539898.us-central1.run.app/
+
 **Repo Link:** https://github.com/SamarthSehgal/wednesday-Investigator
 
 ---
 
 ## 💡 Overview: The Anti-Hallucination Agent
 
-Wednesday is a specialized AI agent designed for **real-time evidence analysis** and **fact verification**. It was built to solve the critical problem of AI hallucination by enforcing strict grounding protocols. The application features a unique, cynical persona and a multimodal interface (Voice and Vision) deployed on Google Cloud's serverless infrastructure.
+Wednesday is a specialized AI agent designed for **real-time evidence analysis** and **fact verification**. The application functions as a **Multimodal Evidence Analyzer**, capable of accepting complex inputs via voice command and image uploads (charts, documents, and visual data). It was built to solve the critical problem of AI hallucination by ensuring all responses are rigorously checked against **live web data** using the **Google Search Grounding** tool. The application features a unique, cynical persona deployed on Google Cloud's  **Serverless** architecture, every interaction is logged to **Google Firestore**, providing a verifiable **immutable audit trail**—a crucial feature for any real-world compliance or enterprise application.
 
 ### 🚀 Key Technical Decisions
 | Component | Technology | Rationale |
@@ -25,8 +26,7 @@ Wednesday is a specialized AI agent designed for **real-time evidence analysis**
 
 The solution uses a **Serverless Microservices Architecture** with a **Direct REST API Integration Pattern**. This design ensures robustness and immediate feature access.
 
-**[INSERT YOUR ARCHITECTURE DIAGRAM PNG HERE]**
-*(Note: Upload your `Diagram Final.png` to your GitHub repo and link it here.)*
+**Diagram Final.png**
 
 ---
 
@@ -41,9 +41,12 @@ The solution uses a **Serverless Microservices Architecture** with a **Direct RE
 
 ### Deployment Steps (After Cloning)
 
+The application adheres to security best practices by reading secrets only from the runtime environment.
+
 1.  **Configure Dependencies:** The deployment relies on the exact versions specified in `requirements.txt` to maintain stability.
 2.  **Authentication:** The application reads secrets securely from the Cloud Run environment variable `GOOGLE_API_KEY`.
-3.  **Run Deployment (using the built-in `Dockerfile`):**
+3.  **Secure Secret Storage:** The `GOOGLE_API_KEY` is securely stored as an Environment Variable in the Cloud Run service configuration (not in the code).
+4.  **Run Deployment (using the built-in `Dockerfile`):**
     ```bash
     gcloud run deploy wednesday-final \
       --source . \
