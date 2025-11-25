@@ -1,0 +1,10 @@
+streamlit
+google-cloud-firestore
+google-auth
+python-dotenv
+Pillow
+gTTS
+streamlit-mic-recorder
+requests
+protobuf==4.25.3
+tink==1.10.0
