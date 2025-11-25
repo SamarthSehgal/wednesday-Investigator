@@ -41,14 +41,27 @@ https://github.com/SamarthSehgal/wednesday-Investigator/blob/541d028ea8903268aef
 * Google Cloud CLI
 * A Gemini API Key (stored as `GOOGLE_API_KEY` in Cloud Run)
 
-### Deployment Steps (After Cloning)
+### Deployment Steps 
+
+Clone Source Code from GitHub This pulls all files (app.py, Dockerfile, etc.) onto the local machine or Cloud Shell.
+
+```bash
+# 1. Clone the repository using the HTTPS URL
+git clone https://github.com/SamarthSehgal/wednesday-Investigator.git
+
+# 2. Navigate to the project directory
+cd wednesday-Investigator
+```
+
+### After Cloning
 
 The application adheres to security best practices by reading secrets only from the runtime environment.
 
 1.  **Configure Dependencies:** The deployment relies on the exact versions specified in `requirements.txt` to maintain stability.
 2.  **Authentication:** The application reads secrets securely from the Cloud Run environment variable `GOOGLE_API_KEY`.
 3.  **Secure Secret Storage:** The `GOOGLE_API_KEY` is securely stored as an Environment Variable in the Cloud Run service configuration (not in the code).
-4.  **Run Deployment (using the built-in `Dockerfile`):**
+4.  **Google Cloud Project ID** The `GOOGLE_CLOUD_PROJECT` ID also needs to be stored as an Environment Variable in the Cloud Run service configuration. 
+5.  **Run Deployment (using the built-in `Dockerfile`):**
     ```bash
     gcloud run deploy wednesday-final \
       --source . \
