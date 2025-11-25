@@ -28,6 +28,8 @@ The solution uses a **Serverless Microservices Architecture** with a **Direct RE
 
 **Diagram Final.png**
 
+https://github.com/SamarthSehgal/wednesday-Investigator/blob/541d028ea8903268aef634c5fb006eb50ca07f78/Diagram%20Final.png
+
 ---
 
 ## 💻 Setup & Deployment
