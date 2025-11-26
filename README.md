@@ -6,6 +6,8 @@
 
 **Repo Link:** https://github.com/SamarthSehgal/wednesday-Investigator
 
+**Blog Link :** https://medium.com/@samarthsehgal2006/how-to-build-wednesday-a-cynical-anti-hallucination-ai-agent-on-google-cloud-run-1ae893e34f74
+
 ---
 
 ## 💡 Overview: The Anti-Hallucination Agent
