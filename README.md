@@ -1,4 +1,4 @@
-# 🕵️‍♀️ Project: WEDNESDAY — Multimodal AI Evidence Analyzer
+# 🕵️‍♀️ Project: WEDNESDAY - Multimodal AI Evidence Analyzer
 
 **Final Submission for the Google Cloud Build and Blog Marathon**
 
